@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<title>DoHyun Park</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/lib/jquery.mCustomScrollbar.min.css" />
+        <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
+        <link rel="stylesheet" type="text/css" href="./css/deskTop.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/pop.css"/>
+        
+    </head>
+	<body class="no-drag">
+        <div id="wrap">
+            <div id="header"></div>
+            <div id="content">
+                <div class="desktop_bg fade"></div>
+                <div class="desktop">
+                    <!-- 1 Line -->
+                    <ul class="folder_row">
+                        <li>
+                            <!-- 새폴더 -->
+                            <div class="folder" data-target="folder">
+                                <img src="./img/folder.png" >
+                                <div class="text">
+                                    <span>새폴더</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 휴지통 -->
+                            <div class="folder" data-target="trash">
+                                <img src="./img/user-trash.png" >
+                                <div class="text">
+                                    <span>휴지통</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- GitHub -->
+                            <div class="folder" data-target="git">
+                                <img src="./img/github.png" >
+                                <div class="text">
+                                    <span>Github</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <!-- 2 Line -->
+                    <ul class="folder_row">
+                        <li>
+                            <!-- 자기 소개 -->
+                            <div class="folder" data-target="self">
+                                <img src="./img/user-home.png" >
+                                <div class="text">
+                                    <span>About Me</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 포트 폴리오 -->
+                            <div class="folder" data-target="work">
+                                <img src="./img/computer.png" >
+                                <div class="text">
+                                    <span>Works</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 티 스토리 -->
+                            <div class="folder" data-target="tistory">
+                                <img src="./img/logomark.svg" >
+                                <div class="text">
+                                    <span>Tistroy</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div id="footer">
+                <div class="task_bar">
+                    <!-- 윈도우 시작 버튼 -->
+                    <input class="start_bnt" type="button" />
+
+                    <!-- 스피커 -->
+                    <input class="sound_on_btn" type="button" alt="사운드" />
+                    <!-- 시간 -->
+                    <div class="date_box">
+                        <p class="clock">시계</p>
+                        <p class="date">날짜</p>
+                    </div>
+                </div>
+            </div>
+            <div class="start_slide fade">
+                <div>
+                    <input class="hamburger_btn" type="button"/>
+                    <div class="start_list_1">
+                        <ul >
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                            <li><span>전원</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="start_list_2">
+                    <div class="s_list_title">A</div>
+                    <ul>
+                        <li><img src="http://placehold.it/50x50">test </li>
+                        <li><img src="http://placehold.it/50x50">test </li>
+                        <li><img src="http://placehold.it/50x50">test </li>
+                        <li><img src="http://placehold.it/50x50">test </li>
+                        <li><img src="http://placehold.it/50x50">test </li>
+                    </ul>
+                    <div class="s_list_title">B</div>
+                    <ul>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                    </ul>
+                </div>
+                <div class="start_list_3">
+                    <div class="s_list_title">A</div>
+                    <ul>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                    </ul>
+                    <div class="s_list_title">B</div>
+                    <ul>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal moving ui-widget-content">
+                <div class="pop_head">
+                    <div class="pop_folder_img">
+                        <input type="button" />
+                    </div>
+                    <div class="pop_title">title</div>
+                    <div class="pop_mng">
+                        <ul>
+                            <li>
+                                <input type="button" class="pop_minsize"/>
+                            </li>
+                            <li>
+                                <input type="button" class="pop_maxsize"/>
+                            </li>
+                            <li>
+                                <input type="button" class="pop_close" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav>
+                    <div>
+                        <input class="pop_navi" type="text"/>
+                    </div>
+                    <div>
+                        <input class="pop_search" type="text" />
+                    </div>
+                </nav>
+                <div class="pop_content">
+                    <div class="">
+                        <ul>   
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="jqgrid">
+                       
+                    </div>
+                    <div class="pop_preview">
+                        <img src="" alt="미리 볼 파일을 선택하십시오.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/lib/Jquery.min.js"></script>
+    <script src="./js/lib/jquery-ui.js"></script>
+    <script src="./js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/deskTop.js"></script>
+    <script>
+
+    /**드래그*/
+    $('.pop_head').on({
+        'mousedown':function(){
+            $(this).parent( ".moving" ).draggable({disabled: false});
+        },
+        'mouseout':function(){
+            $(this).parent( ".moving" ).draggable({disabled: true});
+        }
+    });
+
+    $('.pop_mng li').on('click',function(){
+        let pop_btn = $(this).children("input[type='button']");
+        let modal = pop_btn.parents('.modal');
+
+        if(pop_btn.hasClass('pop_minsize')){
+            modal.animate({
+                top:9999,
+                opacity: 0.1,
+            },1000);
+        }else
+        if(pop_btn.hasClass('pop_maxsize')){
+            modal.toggleClass('max_modal');
+            if(modal.hasClass('max_modal')){
+                modal.draggable({disabled: true});
+                modal.removeClass('moving');
+            }else{
+                modal.addClass('moving');
+            }
+
+        }else
+        if(pop_btn.hasClass('pop_close')){
+            modal.addClass('fade');
+        }
+    });
+    $('.pop_minsize').on('click',function(){
+        $(this).parents('.modal');
+    });
+
+    </script>
+</html>

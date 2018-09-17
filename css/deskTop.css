@@ -1,0 +1,206 @@
+
+            /*드래그 방지*/
+            .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} 
+            .fade {display: none;}
+            /**/
+            #wrap{
+                position: fixed;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+                background:#01132b url("../img/windows10background.jpg") no-repeat center;
+                background-size: cover;
+            }
+            
+            .desktop{
+                position: fixed;
+                top:30%;
+                left:40%;
+            }
+            .folder_row>li{
+                width: 10%;
+                min-width: 40px;
+                margin:1%;
+                float:left;
+            }
+            .folder_row::after{
+                clear: both;
+                display: block;
+                content: '';
+            }
+            
+            /**/
+            .folder{
+                width: 100%;
+                padding:5%;
+                cursor: pointer;
+                border:1px solid #fff0;
+            }
+            .folder:hover{
+                background:rgba(67, 117, 217, 0.562);
+                border:1px solid #fff5;
+            }
+            .folder:active{
+                background:rgba(40, 98, 214, 0.671);
+                border:1px solid #fff5;
+            }
+            .folder>.text{
+                color:#fff;
+                font-size:0.8em;
+                text-align: center;
+            }
+            .folder>img{
+                width: 100%;
+            }
+
+            #footer{
+                position: fixed;
+                bottom:0;
+                left:0;
+                width: 100%;
+                height:50px;
+                background:#0009;
+                z-index: 1000000;
+            }
+            .date_box{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1%;
+                color:#fff;
+                font-size:0.8em;
+                text-align: center;
+                line-height: 150%;
+            }
+            .start_bnt{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                border:0;
+                outline: 0;
+                background: url("../img/gnome-foot.png") no-repeat center center;
+                background-size: 40%;
+            }            
+            .start_bnt:hover{
+                background:rgba(97, 97, 97, 0.363) url("../img/gnome-foot_on.png") no-repeat center center;
+                background-size: 40%;
+            }
+
+            /*사운드 버튼*/
+            .sound_on_btn{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                right: 10%;
+                top: 25%;
+                cursor: pointer;
+                border:0;
+                outline: 0;
+                background: url("../img/audio-volume-muted.png") no-repeat center;
+                background-size: 100%;
+            }
+            input.sound_on_btn_on{
+                background: url("../img/audio-volume-high.png") no-repeat center;
+                background-size: 100%;
+            }
+          
+
+            .desktop_bg{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: calc(100% - 50px);
+                z-index: 1000;
+            }
+
+            /*스타트 버튼*/
+            .start_slide{
+                position: fixed;
+                bottom:50px;
+                width: 50%;
+                height:50vh;
+                overflow-y: hidden;
+                background: #01132b;
+                z-index: 10000;
+            }
+
+            .start_slide>div{
+                float:left;
+                color:#fff;
+            }
+            .start_slide:after{
+                display: block;
+                content:'';
+                clear: both;
+            }
+            /*슬라이드 1*/
+            .start_list_1{
+                position: absolute;
+                left:0;
+                bottom: 0;
+                /* width: 200px; */
+                /* z-index: -9999; */
+            }
+            .start_list_1 li{
+                background: url(http://placehold.it/50x50) no-repeat center;
+                width:50px;
+                height:50px;
+                background-size: 50%;
+            }
+            .start_list_1 li:hover{
+                background:rgba(97, 97, 97, 0.363) url(http://placehold.it/50x50) no-repeat center;
+                background-size: 50%;
+            }
+            .hamburger_btn{
+                position: absolute;
+                top:0;
+                left:0;
+                border:0;
+                outline: 0;
+                width: 50px;
+                height: 50px;
+                background: url(http://placehold.it/50x50) no-repeat center;
+                background-size: 50%;
+            }
+            .hamburger_btn:hover{
+                background:rgba(97, 97, 97, 0.363) url(http://placehold.it/50x50) no-repeat center;
+                background-size: 50%;
+            }
+            /*슬라이드 2*/
+            .start_list_2{
+                position: relative;
+                width:45%;
+                height:50vh;
+                left:50px;
+                padding-right:5%;
+                bottom: 0;
+                background: #01132b;
+            }
+            .start_list_2 li{
+                background: #44ee;
+                width:100%;
+                height:45px;
+            }
+            .s_list_title{
+                padding: 22px 0;
+            }
+            .start_list_3{
+                position: relative;
+                width:calc(45% - 50px);
+                height:50vh;
+                left:50px;
+                padding-right:5%;
+                bottom: 0;
+                background: #01132b;
+            }
+            .start_list_3 li{
+                background: #44ee;
+                width:100%;
+                height:45px;
+            }
+
+            .mCSB_dragger_bar{
+                width:15% !important; 
+            }

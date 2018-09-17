@@ -1,0 +1,81 @@
+div.max_modal{
+    width: 100%;
+    height: 100%;
+    left:0 !important;
+    top: 0 !important;
+}
+.modal{
+    position: fixed;
+    width:50vw;
+    height:50vh;
+    left:5%;
+    top: 10%;
+    background: #fff;
+    z-index: 100;
+    border:1px solid #023885;
+    box-shadow: 3px 3px 30px #023885;
+    opacity: 1 !important;
+}
+.pop_head{
+    position: relative;
+    height: 38px;
+}
+.pop_head>div{
+    float:left;
+}
+.pop_head::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.pop_folder_img{
+    padding:5px;
+}
+.pop_folder_img > input[type='button']{
+    border:0;
+    background: url("../img/folder-new.png") no-repeat center ;
+}
+.pop_title{
+    width: calc(100% - 100px);
+    text-align: center;
+    padding-top:10px;
+}
+.pop_mng{
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top:0;
+}
+.pop_mng li{
+    float: left;
+    width: 33.3%;
+    padding:10% 0;
+}
+.pop_mng li:hover{
+    background: #ddd;
+}
+.pop_mng li:hover:last-child{
+    background: #ff2e44;
+}
+.pop_mng li:hover:last-child .pop_close{
+    background: url("../img/x_btn_on.gif") no-repeat center ;
+}
+.after::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.pop_mng li input[type='button']{
+    width: 100%;
+    border:0;
+}
+
+.pop_minsize{
+    background: url("../img/min_size_btn.gif") no-repeat center;
+}
+.pop_maxsize{
+    background: url("../img/max_size_btn.gif") no-repeat center;
+}
+.pop_close{
+    background: url("../img/x_btn.gif") no-repeat center ;
+}
